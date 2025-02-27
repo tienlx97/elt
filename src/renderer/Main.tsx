@@ -12,6 +12,8 @@ import {
 import type { NavDrawerProps } from '@fluentui/react-nav-preview';
 import { NavDrawer, NavDrawerBody, NavDrawerHeader, NavItem } from '@fluentui/react-nav-preview';
 
+import { ContractTab } from '../routes/ContractTab';
+
 import { Logo } from './Logo';
 
 const useStyles = makeStyles({
@@ -73,7 +75,7 @@ export const Main = (props: Partial<NavDrawerProps>) => {
         </NavDrawerBody>
       </NavDrawer>
       <div className={styles.content}>
-        <div className={styles.field}>{tab === '1' && <div>123</div>}</div>
+        <div className={styles.field}>{tab === '1' && <ContractTab />}</div>
       </div>
     </div>
   );
