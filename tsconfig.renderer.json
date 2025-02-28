@@ -11,7 +11,8 @@
     "moduleResolution": "Node",
     "noEmit": true,
     "paths": {
-      "@common/*": ["./src/common/*"]
+      "@common/*": ["./src/common/*"],
+      "@features/*": ["./src/features/*"]
     },
     "resolveJsonModule": true,
     "rootDir": "./src",

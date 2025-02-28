@@ -1,15 +1,22 @@
 import React from 'react';
-import { Button } from '@fluentui/react-components';
-import { AddFilled } from '@fluentui/react-icons';
+import { makeStyles } from '@fluentui/react-components';
+
+import { ContractTable } from '../features/contract/ContractTable';
+
+const useStyles = makeStyles({
+  root: {
+    display: 'flex',
+    gap: '1rem',
+    flexDirection: 'column',
+  },
+});
 
 export const ContractTab = () => {
+  const styles = useStyles();
+
   return (
-    <div>
-      <div>
-        <Button icon={<AddFilled />} appearance="primary">
-          Create
-        </Button>
-      </div>
+    <div className={styles.root}>
+      <ContractTable />
     </div>
   );
 };
